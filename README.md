@@ -1,6 +1,7 @@
-{{ Specification Name }}
+Network Metrics
 ===
 
+A specification for network metrics.
 
 ## Description
 
@@ -15,4 +16,3 @@
 ## Copyright
 
 Copyright &copy; 2014. NodePrime.
-
