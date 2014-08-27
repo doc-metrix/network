@@ -358,9 +358,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{RX,bytes|t=0.5s} - d_{RX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{d_{RX|t=1s} - d_{RX|t=0s}}{BW}",
     "description": "Percentage of this network interface's maximum bandwidth being used for receiving packets.",
-    "notes": "",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
@@ -381,9 +381,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{TX,bytes|t=0.5s} - d_{TX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{d_{TX|t=1s} - d_{TX|t=0s}}{BW}",
     "description": "Percentage of this network interface's maximum bandwidth being used for transmitting packets.",
-    "notes": "",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
@@ -771,9 +771,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{RX,bytes|t=0.5s} - d_{RX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{d_{RX|t=1s} - d_{RX|t=0s}}{BW}",
     "description": "Percentage of the loopback interface's maximum bandwidth being used for receiving packets.",
-    "notes": "",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
@@ -795,9 +795,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{TX,bytes|t=0.5s} - d_{TX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{d_{TX|t=1s} - d_{TX|t=0s}}{BW}",
     "description": "Percentage of the loopback interface's maximum bandwidth being used for transmitting packets.",
-    "notes": "",
+    "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
@@ -819,9 +819,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{RX,bytes|t=0.5s} - d_{RX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{RX|t=1s} - d_{RX|t=0s}}{BW}",
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
-    "notes": "",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
@@ -842,9 +842,9 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{TX,bytes|t=0.5s} - d_{TX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{TX|t=1s} - d_{TX|t=0s}}{BW}",
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
-    "notes": "",
+    "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
       "LinuxKernel": ["/proc/net/dev", "ethtool"]
     },
