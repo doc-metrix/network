@@ -763,7 +763,7 @@
       "http://www.webopedia.com/TERM/L/loopback_address.html"
     ]
   },
-  "net.utilizationRX": {
+  "net.lo.utilizationRX": {
     "display_name": "Network Utilization (Receiving)",
     "units": "utilization",
     "max": 1,
@@ -787,7 +787,7 @@
       "http://www.webopedia.com/TERM/L/loopback_address.html"
     ]
   },
-  "net.utilizationTX": {
+  "net.lo.utilizationTX": {
     "display_name": "Network Utilization (Transmitting)",
     "units": "utilization",
     "max": 1,
