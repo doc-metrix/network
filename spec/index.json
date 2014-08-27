@@ -16,7 +16,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.bytesRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
       "http://linux.die.net/man/5/proc"
@@ -39,7 +39,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6}\\.bytesTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
       "http://linux.die.net/man/5/proc"
@@ -62,7 +62,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.carrierTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -85,7 +85,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.collsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.webopedia.com/TERM/P/packet_collision.html"
@@ -108,7 +108,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.freesoft.org/CIE/RFC/1144/6.htm"
@@ -131,7 +131,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.freesoft.org/CIE/RFC/1144/6.htm"
@@ -154,7 +154,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
         "http://linux.die.net/man/5/proc"
     ]
@@ -176,7 +176,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc"
     ]
@@ -198,7 +198,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -221,7 +221,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -244,7 +244,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -267,7 +267,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -290,7 +290,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.frameRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -314,7 +314,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.mutlicastRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -337,7 +337,7 @@
     },
     "device": "net\\.[^(lo)][^\\.]{1,6})\\.packetsRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -360,7 +360,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.packetsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
@@ -383,7 +383,7 @@
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.utilizationRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://linux.die.net/man/8/ethtool",
@@ -407,7 +407,7 @@
     },
     "device": "net\\.([^(lo)][\\.]{1,6})\\.utilizationTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://linux.die.net/man/8/ethtool",
@@ -431,7 +431,7 @@
     },
     "device": "net\\.(lo)\\.bytesRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
       "http://linux.die.net/man/5/proc",
@@ -455,7 +455,7 @@
     },
     "device": "net\\.(lo)\\.bytesTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
       "http://linux.die.net/man/5/proc",
@@ -479,7 +479,7 @@
     },
     "device": "net\\.(lo)\\.carrierTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -503,7 +503,7 @@
     },
     "device": "net\\.(lo).collsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.webopedia.com/TERM/P/packet_collision.html",
@@ -527,7 +527,7 @@
     },
     "device": "net\\.(lo)\\.compressedRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.freesoft.org/CIE/RFC/1144/6.htm",
@@ -551,7 +551,7 @@
     },
     "device": "net\\.(lo)\\.compressedTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.freesoft.org/CIE/RFC/1144/6.htm",
@@ -575,7 +575,7 @@
     },
     "device": "net\\.lo\\.dropRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.webopedia.com/TERM/L/loopback_address.html"
@@ -598,7 +598,7 @@
     },
     "device": "net\\.(lo)\\.dropTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.webopedia.com/TERM/L/loopback_address.html"
@@ -621,7 +621,7 @@
     },
     "device": "net\\.(lo)\\.errsRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -645,7 +645,7 @@
     },
     "device": "net\\.(lo)\\.errsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -669,7 +669,7 @@
     },
     "device": "net\\.(lo)\\.fifoRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -693,7 +693,7 @@
     },
     "device": "net\\.(lo)\\.fifoTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -717,7 +717,7 @@
     },
     "device": "net\\.(lo)\\.frameRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -742,7 +742,7 @@
     },
     "device": "net\\.(lo)\\.multicastRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -766,7 +766,7 @@
     },
     "device": "net\\.(lo)\\.packetsRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -790,7 +790,7 @@
     },
     "device": "net\\.(lo)\\.packetsTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
@@ -814,7 +814,7 @@
     },
     "device": "net\\.(lo)\\.utilizationRX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://linux.die.net/man/8/ethtool",
@@ -839,7 +839,7 @@
     },
     "device": "net\\.(lo)\\.utilizationTX$",
     "vendors": "*",
-    "classification": "net",
+    "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
       "http://linux.die.net/man/8/ethtool",
