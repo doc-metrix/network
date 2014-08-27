@@ -810,5 +810,51 @@
       "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm",
       "http://www.webopedia.com/TERM/L/loopback_address.html"
     ]
+  },
+  "net.utilizationRX": {
+    "display_name": "Average Network Utilization (Receiving)",
+    "units": "utilization",
+    "max": 1,
+    "min": 0,
+    "sig_figs": null,
+    "data_type": "percentage",
+    "type": "derived",
+    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{RX,bytes|t=0.5s} - d_{RX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
+    "notes": "",
+    "source": {
+      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    },
+    "device": null,
+    "vendors": "*",
+    "classification": "network",
+    "refs": [
+      "http://linux.die.net/man/5/proc",
+      "http://linux.die.net/man/8/ethtool",
+      "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
+    ]
+  },
+  "net.utilizationTX": {
+    "display_name": "Average Network Utilization (Transmitting)",
+    "units": "utilization",
+    "max": 1,
+    "min": 0,
+    "sig_figs": null,
+    "data_type": "percentage",
+    "type": "derived",
+    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{TX,bytes|t=0.5s} - d_{TX,bytes|t=0s} \\cdot 16}{BW_{megabits/s} \\cdot 1000 \\cdot 1000}",
+    "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
+    "notes": "",
+    "source": {
+      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    },
+    "device": null,
+    "vendors": "*",
+    "classification": "network",
+    "refs": [
+      "http://linux.die.net/man/5/proc",
+      "http://linux.die.net/man/8/ethtool",
+      "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
+    ]
   }
 }
