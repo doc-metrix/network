@@ -4,7 +4,7 @@
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -33,7 +33,7 @@
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -62,7 +62,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -91,7 +91,7 @@
     "units": "collisions",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -120,7 +120,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -149,7 +149,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -178,7 +178,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -209,7 +209,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -237,7 +237,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -266,7 +266,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -295,7 +295,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -324,7 +324,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -353,7 +353,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -383,7 +383,7 @@
     "units": "frames",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -412,7 +412,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -441,7 +441,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -470,7 +470,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
@@ -506,7 +506,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
@@ -542,7 +542,7 @@
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -572,7 +572,7 @@
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -602,7 +602,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -632,7 +632,7 @@
     "units": "collisions",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -662,7 +662,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -692,7 +692,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -722,7 +722,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -754,7 +754,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -783,7 +783,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -813,7 +813,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -843,7 +843,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -873,7 +873,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -903,7 +903,7 @@
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw", 
     "formula": {
@@ -934,7 +934,7 @@
     "units": "frames",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -964,7 +964,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -994,7 +994,7 @@
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "count",
     "type": "raw",
     "formula": {
@@ -1024,7 +1024,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
@@ -1061,7 +1061,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
@@ -1098,7 +1098,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
@@ -1137,7 +1137,7 @@
     "units": "utilization",
     "max": 1,
     "min": 0,
-    "sig_figs": null,
+    "sigFigs": null,
     "data_type": "percentage",
     "type": "derived",
     "formula": {
