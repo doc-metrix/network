@@ -7,7 +7,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "d_{rx}",
+    "formula": {
+      "equation": "d_{rx}",
+      "variables": {
+        "d_{rx}": {
+          "description": "Number of bytes received"
+        }
+      }
+    },
     "description": "The total number of bytes received by this network interface.",
     "notes": "",
     "source": {
@@ -29,7 +36,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "d_{tx}}",
+    "formula": {
+      "equation": "d_{tx}}",
+      "variables": {
+        "d_{tx}": {
+          "description": "Number of bytes transmitted"
+        }
+      }
+    },
     "description": "The total number of bytes transmitted by this network interface.",
     "notes": "",
     "source": {
@@ -51,7 +65,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{CarrierLosses}",
+    "formula": {
+      "equation": "n_{CarrierLosses}",
+      "variables": {
+        "n_{CarrierLosses}": {
+          "description": "Number of loss-of-carrier signal events detected by the device driver"
+        }
+      }
+    },
     "description": "The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on this device, the device on the other end, or a faulty ethernet cable plugged in to this device.",
     "notes": "",
     "source": {
@@ -73,7 +94,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{collisions}",
+    "formula": {
+      "equation": "n_{collisions}",
+      "variables": {
+        "n_{collisions}": {
+          "description": "Number of packet collisions detected when transmitting"
+        }
+      }
+    },
     "description": "The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance",
     "notes": "",
     "source": {
@@ -95,7 +123,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{CompressedPacketsRX}",
+    "formula": {
+      "equation": "n_{CompressedPacketsRX}",
+      "variables": {
+        "n_{CompressedPacketsRX}": {
+          "description": "Number of compressed packets received"
+        }
+      }
+    },
     "description": "Number of compressed packets received by this network interface.",
     "notes": "",
     "source": {
@@ -117,7 +152,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{CompressedPacketsTX}",
+    "formula": {
+      "equation": "n_{CompressedPacketsTX}",
+      "variables": {
+        "n_{CompressedPacketsTX}": {
+          "description": "Number of compressed packets transmitted"
+        }
+      }
+    },
     "description": "Number of compressed packets sent by this network interface.",
     "notes": "",
     "source": {
@@ -139,7 +181,17 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
+    "formula": {
+      "equation": "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
+      "variables": {
+        "n_{DroppedPacketsRX}": {
+          "description": "Number of received packets dropped by this interface"
+        },
+        "n_{MissingPacketsRX}": {
+          "description": "Number of expected packets not receieved"
+        }
+      }
+    },
     "description": "Number of packets dropped and otherwise not received by this network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.",
     "notes": "",
     "source": {
@@ -160,7 +212,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{DroppedPacketsTX",
+    "formula": {
+      "equation": "n_{DroppedPacketsTX",
+      "variables": {
+        "n_{DroppedPacketsTX}": {
+          "description": "Number of packets dropped before transmitting"
+        }
+      }
+    },
     "description": "Number of packets dropped by this network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
     "source": {
@@ -181,7 +240,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{ErrorsRX}",
+    "formula": {
+      "equation": "n_{ErrorsRX}",
+      "variables": {
+        "n_{ErrorsRX}": {
+          "description": "Number of malformed packets received"
+        }
+      }
+    },
     "description": "Number of malformed packets received by this network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "soruce": {
@@ -203,7 +269,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{ErrorsTX}",
+    "formula": {
+      "equation": "n_{ErrorsTX}",
+      "variables": {
+        "n_{ErrorsTX}": {
+          "description": "Number of errors detected when transmitting"
+        }
+      }
+    },
     "description": "Number of errors detected by this network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "source": {
@@ -225,7 +298,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{FifoErrorsRX}",
+    "formula": {
+      "equation": "n_{FifoErrorsRX}",
+      "variables": {
+        "n_{FifoErrorsRX}": {
+          "description": "Number of receiving queue errors"
+        }
+      }
+    },
     "description": "The number of receiving queue errors detected by this network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.",
     "notes": "",
     "source": {
@@ -247,7 +327,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{FifoErrorsTX}",
+    "formula": {
+      "equation": "n_{FifoErrorsTX}",
+      "variables": {
+        "n_{FifoErrorsTX}": {
+          "description": "Number of transmitting queue errors"
+        }
+      }
+    },
     "description": "The number of transmitting queue errors detected by this network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
     "source": {
@@ -269,7 +356,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{FrameErrsRX",
+    "formula": {
+      "equation": "n_{FrameErrsRX}",
+      "variables": {
+        "n_{FrameErrsRX}": {
+          "description": "Number of packets received with framing errors"
+        }
+      }
+    },
     "description": "Number of packets received by this interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.",
     "notes": "",
     "source": {
@@ -292,7 +386,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula": "n_{MulticastFramesRX}",
+    "formula": {
+      "equation": "n_{MulticastFramesRX}",
+      "variables": {
+        "n_{MulticastFramesRX}": {
+          "description": "Number of multicast frames received"
+        }
+      }
+    },
     "description": "Number of multicast frames received by this network interface.",
     "notes": "",
     "source": {
@@ -314,7 +415,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{PacketsRX}",
+    "formula": {
+      "equation": "n_{PacketsRX}",
+      "variables": {
+        "n_{PacketsRX}": {
+          "description": "Number of packets received"
+        }
+      }
+    },
     "description": "Number of packets received by this network interface.",
     "notes": "",
     "source": {
@@ -336,7 +444,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{PacketsTX}",
+    "formula": {
+      "equation": "n_{PacketsTX}",
+      "variables": {
+        "n_{PacketsTX}": {
+          "description": "Number of packets transmitted"
+        }
+      }
+    },
     "description": "Number of packets transmitted by this network interface.",
     "notes": "",
     "source": {
@@ -358,7 +473,20 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{rx|t=1s} - d_{rx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
+      "variables": {
+        "\\Delta d_{rx}": {
+          "description": "Amount of data received in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface"
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Percentage of this network interface's maximum bandwidth being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
@@ -381,7 +509,20 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
+      "variables": {
+        "\\Delta d_{tx}": {
+          "description": "Amount of data transmitted in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface" 
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Percentage of this network interface's maximum bandwidth being used for transmitting packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
@@ -404,7 +545,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "d_{rx}",
+    "formula": {
+      "equation": "d_{rx}",
+      "variables": {
+        "d_{rx}": {
+          "description": "Number of bytes received"
+        }
+      }
+    },
     "description": "The total number of bytes received by the loopback interface. This should be equal to the number of bytes transmitted by the loopback interface.",
     "notes": "",
     "source": {
@@ -427,7 +575,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "d_{tx}",
+    "formula": {
+      "equation": "d_{tx}",
+      "variables": {
+        "d_{tx}": {
+          "description": "Number of bytes transmitted"
+        }
+      }
+    },
     "description": "The total number of bytes transmitted through the loopback interface. This should equal the number of bytes received by the loopback interface.",
     "notes": "",
     "source": {
@@ -450,7 +605,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{CarrierLosses}",
+    "formula": {
+      "equation": "n_{CarrierLosses}",
+      "variables": {
+        "n_{CarrierLosses}": {
+          "description": "Number of loss-of-carrier-signal events detected by the device driver"
+        }
+      }
+    },
     "description": "The total number of loss-of-carrier-signal events detected by the loopback interface. As it is a virtual interface with no hardware attached, this metric should be 0.",
     "notes": "",
     "source": {
@@ -473,7 +635,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{collisions}",
+    "formula": {
+      "equation": "n_{collisions}",
+      "variables": {
+        "n_{collisions": {
+          "description": "Number of packet collisions detected when transmitting"
+        }
+      }
+    },
     "description": "The number of packet collisions detected when transmitting on the loopback interface. This should be 0, as the loopback interface is only used by this machine.",
     "notes": "",
     "source": {
@@ -496,7 +665,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{CompressedPacketsRX}",
+    "formula": {
+      "equation": "n_{CompressedPacketsRX}",
+      "variables": {
+        "n_{CompressedPacketsRX}": {
+          "description": "Number of compressed packets received"
+        }
+      }
+    },
     "description": "Number of compressed packets received by the loopback interface. This should be equal to the number of compressed packets sent by the loopback interface.",
     "notes": "",
     "source": {
@@ -519,7 +695,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula": "n_{CompressedPacketsTX}",
+    "formula": {
+      "equation": "n_{CompressedPacketsTX}",
+      "variables": {
+        "n_{CompressedPacketsTX}": {
+          "description": "Number of compressed packets transmitted"
+        }
+      }
+    },
     "description": "Number of compressed packets sent through the loopback interface. This should be equal to the number of compressed packets received by the loopback interface.",
     "notes": "",
     "source": {
@@ -542,7 +725,17 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
+    "formula": {
+      "equation": "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
+      "variables": {
+        "n_{DroppedPacketsRX}": {
+          "description": "Number of received packets dropped by this interface"
+        },
+        "n_{MissingPacketsRX}": {
+          "description": "Number of expected packets not received"
+        }
+      }
+    },
     "description": "Number of packets dropped and otherwise not received by the loopback interface. Since there is no physical connection to this interface (i.e. no bad cables), this means that its buffer is being overwhelmed.",
     "notes": "",
     "source": {
@@ -564,7 +757,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{DroppedPacketsTX}",
+    "formula": {
+      "equation": "n_{DroppedPacketsTX}",
+      "variables": {
+        "n_{DroppedPacketsTX}": {
+          "description": "Number of packets dropped before transmitting"
+        }
+      }
+    },
     "description": "Number of packets dropped by the loopback interface when transmitting. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
     "source": {
@@ -586,7 +786,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{ErrorsRX}",
+    "formula": {
+      "equation": "n_{ErrorsRX}",
+      "variables": {
+        "n_{ErrorsRX}": {
+          "description": "Number of malformed packets received"
+        }
+      }
+    },
     "description": "Number of malformed packets received by the loopback interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "source": {
@@ -609,7 +816,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{ErrorsRX}",
+    "formula": {
+      "equation": "n_{ErrorsTX}",
+      "variables": {
+        "n_{ErrorsTX}": {
+          "description": "Number of errors detected when trasnmitting"
+        }
+      }
+    },
     "description": "Number of errors detected by the loopback interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "source": {
@@ -632,7 +846,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{FifoErrorsRX}",
+    "formula": {
+      "equation": "n_{FifoErrorsRX}",
+      "variables": {
+        "n_{FifoErrorsRX": {
+          "description": "Number of receiving queue errors"
+        }
+      }
+    },
     "description": "The number of receiving queue errors detected by the loopback interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflow.",
     "notes": "",
     "source": {
@@ -655,7 +876,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{FifoErrorsTX}",
+    "formula": {
+      "equation": "n_{FifoErrorsTX}",
+      "variables": {
+        "n_{FifoErrorsTX": {
+          "description": "Number of transmitting queue errors"
+        }
+      }
+    },
     "description": "The number of transmitting queue errors detected by the loopback interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
     "source": {
@@ -678,7 +906,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw", 
-    "formula": "n_{FrameErrsRX}",
+    "formula": {
+      "equation": "n_{FrameErrsRX}",
+      "variables": {
+        "n_{FrameErrsRX}": {
+          "description": "Number of packets received with framing errors"
+        }
+      }
+    },
     "description": "Number of packets received by the loopback interface with framing errors. This should be 0, as the source of these errors is usually the physical connection (e.g. cabling) between interfaces.",
     "notes": "",
     "sources": {
@@ -702,7 +937,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{MulticastFramesRX}",
+    "formula": {
+      "equation": "n_{MulticastFramesRX}",
+      "variables": {
+        "n_{MulticastFramesRX}": {
+          "description": "Number of multicast frames received"
+        }
+      }
+    },
     "description": "Number of multicast frames received by the loopback interface.",
     "notes": "",
     "source": {
@@ -725,7 +967,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{PacketsRX}",
+    "formula": {
+      "equation": "n_{PacketsRX}",
+      "variables": {
+        "n_{PacketsRX}": {
+          "description": "Number of packets received"
+        }
+      }
+    },
     "description": "Number of packets received by the loopback interface. This should be equal to the number of packets transmitted by the loopback interface.",
     "notes": "",
     "source": {
@@ -748,7 +997,14 @@
     "sig_figs": null,
     "data_type": "count",
     "type": "raw",
-    "formula" : "n_{PacketsTX}",
+    "formula": {
+      "equation": "n_{PacketsTX}",
+      "variables": {
+        "n_{PacketsTX}": {
+          "description": "Number of packets transmitted"
+        }
+      }
+    },
     "description": "Number of packets transmitted by the loopback interface. This should be equal to the number of packets received by the loopback interface.",
     "notes": "",
     "source": {
@@ -771,7 +1027,20 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{rx|t=1s} - d_{rx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
+      "variables": {
+        "\\Delta d_{rx}": {
+          "description": "Amount of data received in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface"
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Percentage of the loopback interface's maximum bandwidth being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
@@ -795,7 +1064,20 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
+      "variables": {
+        "\\Delta d_{tx}": {
+          "description": "Amount of data transmitted in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface"
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Percentage of the loopback interface's maximum bandwidth being used for transmitting packets.",
     "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
@@ -819,7 +1101,23 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{rx|t=1s} - d_{rx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
+      "variables": {
+        "n_{net \\neq lo}}": {
+          "description": "Number of network interfaces, excluding the loopback interface"
+        },
+        "\\Delta d_{rx}": {
+          "description": "Amount of data received in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface"
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
@@ -842,7 +1140,23 @@
     "sig_figs": null,
     "data_type": "percentage",
     "type": "derived",
-    "formula" : "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
+    "formula": {
+      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
+      "variables": {
+        "n_{net \\neq lo}": {
+          "description": "Number of network interfaces, excluding the loopback interface"
+        },
+        "\\Delta d_{tx}": {
+          "description": "Amount of data transmitted in measured time period"
+        },
+        "BW": {
+          "description": "Bandwidth of network interface"
+        },
+        "\\Delta t": {
+          "description": "Amount of time measured"
+        }
+      }
+    },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
     "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
     "source": {
