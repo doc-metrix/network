@@ -17,8 +17,8 @@
     },
     "description": "The total number of bytes received by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel" : ["/proc/net/dev"]
+    "platforms": {
+      "linux" : ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.bytesRX$",
     "vendors": "*",
@@ -46,8 +46,8 @@
     },
     "description": "The total number of bytes transmitted by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6}\\.bytesTX$",
     "vendors": "*",
@@ -75,8 +75,8 @@
     },
     "description": "The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on this device, the device on the other end, or a faulty ethernet cable plugged in to this device.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.carrierTX$",
     "vendors": "*",
@@ -104,8 +104,8 @@
     },
     "description": "The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.collsTX$",
     "vendors": "*",
@@ -133,8 +133,8 @@
     },
     "description": "Number of compressed packets received by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedRX$",
     "vendors": "*",
@@ -162,8 +162,8 @@
     },
     "description": "Number of compressed packets sent by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedTX$",
     "vendors": "*",
@@ -194,8 +194,8 @@
     },
     "description": "Number of packets dropped and otherwise not received by this network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropRX$",
     "vendors": "*",
@@ -222,8 +222,8 @@
     },
     "description": "Number of packets dropped by this network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropTX$",
     "vendors": "*",
@@ -250,8 +250,8 @@
     },
     "description": "Number of malformed packets received by this network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "soruce": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsRX$",
     "vendors": "*",
@@ -279,8 +279,8 @@
     },
     "description": "Number of errors detected by this network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsTX$",
     "vendors": "*",
@@ -308,8 +308,8 @@
     },
     "description": "The number of receiving queue errors detected by this network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoRX$",
     "vendors": "*",
@@ -337,8 +337,8 @@
     },
     "description": "The number of transmitting queue errors detected by this network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoTX$",
     "vendors": "*",
@@ -366,8 +366,8 @@
     },
     "description": "Number of packets received by this interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.frameRX$",
     "vendors": "*",
@@ -396,8 +396,8 @@
     },
     "description": "Number of multicast frames received by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.mutlicastRX$",
     "vendors": "*",
@@ -425,8 +425,8 @@
     },
     "description": "Number of packets received by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.[^(lo)][^\\.]{1,6})\\.packetsRX$",
     "vendors": "*",
@@ -454,8 +454,8 @@
     },
     "description": "Number of packets transmitted by this network interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.packetsTX$",
     "vendors": "*",
@@ -489,8 +489,8 @@
     },
     "description": "Percentage of this network interface's maximum bandwidth being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": "net\\.([^(lo)][^\\.]{1,6})\\.utilizationRX$",
     "vendors": "*",
@@ -525,8 +525,8 @@
     },
     "description": "Percentage of this network interface's maximum bandwidth being used for transmitting packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": "net\\.([^(lo)][\\.]{1,6})\\.utilizationTX$",
     "vendors": "*",
@@ -555,8 +555,8 @@
     },
     "description": "The total number of bytes received by the loopback interface. This should be equal to the number of bytes transmitted by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.bytesRX$",
     "vendors": "*",
@@ -585,8 +585,8 @@
     },
     "description": "The total number of bytes transmitted through the loopback interface. This should equal the number of bytes received by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.bytesTX$",
     "vendors": "*",
@@ -615,8 +615,8 @@
     },
     "description": "The total number of loss-of-carrier-signal events detected by the loopback interface. As it is a virtual interface with no hardware attached, this metric should be 0.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.carrierTX$",
     "vendors": "*",
@@ -645,8 +645,8 @@
     },
     "description": "The number of packet collisions detected when transmitting on the loopback interface. This should be 0, as the loopback interface is only used by this machine.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo).collsTX$",
     "vendors": "*",
@@ -675,8 +675,8 @@
     },
     "description": "Number of compressed packets received by the loopback interface. This should be equal to the number of compressed packets sent by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.compressedRX$",
     "vendors": "*",
@@ -705,8 +705,8 @@
     },
     "description": "Number of compressed packets sent through the loopback interface. This should be equal to the number of compressed packets received by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.compressedTX$",
     "vendors": "*",
@@ -738,8 +738,8 @@
     },
     "description": "Number of packets dropped and otherwise not received by the loopback interface. Since there is no physical connection to this interface (i.e. no bad cables), this means that its buffer is being overwhelmed.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.lo\\.dropRX$",
     "vendors": "*",
@@ -767,8 +767,8 @@
     },
     "description": "Number of packets dropped by the loopback interface when transmitting. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.dropTX$",
     "vendors": "*",
@@ -796,8 +796,8 @@
     },
     "description": "Number of malformed packets received by the loopback interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.errsRX$",
     "vendors": "*",
@@ -826,8 +826,8 @@
     },
     "description": "Number of errors detected by the loopback interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.errsTX$",
     "vendors": "*",
@@ -856,8 +856,8 @@
     },
     "description": "The number of receiving queue errors detected by the loopback interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflow.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.fifoRX$",
     "vendors": "*",
@@ -886,8 +886,8 @@
     },
     "description": "The number of transmitting queue errors detected by the loopback interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.fifoTX$",
     "vendors": "*",
@@ -916,8 +916,8 @@
     },
     "description": "Number of packets received by the loopback interface with framing errors. This should be 0, as the source of these errors is usually the physical connection (e.g. cabling) between interfaces.",
     "notes": "",
-    "sources": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.frameRX$",
     "vendors": "*",
@@ -947,8 +947,8 @@
     },
     "description": "Number of multicast frames received by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.multicastRX$",
     "vendors": "*",
@@ -977,8 +977,8 @@
     },
     "description": "Number of packets received by the loopback interface. This should be equal to the number of packets transmitted by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.packetsRX$",
     "vendors": "*",
@@ -1007,8 +1007,8 @@
     },
     "description": "Number of packets transmitted by the loopback interface. This should be equal to the number of packets received by the loopback interface.",
     "notes": "",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev"]
+    "platforms": {
+      "linux": ["/proc/net/dev"]
     },
     "device": "net\\.(lo)\\.packetsTX$",
     "vendors": "*",
@@ -1043,8 +1043,8 @@
     },
     "description": "Percentage of the loopback interface's maximum bandwidth being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": "net\\.(lo)\\.utilizationRX$",
     "vendors": "*",
@@ -1080,8 +1080,8 @@
     },
     "description": "Percentage of the loopback interface's maximum bandwidth being used for transmitting packets.",
     "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": "net\\.(lo)\\.utilizationTX$",
     "vendors": "*",
@@ -1120,8 +1120,8 @@
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": null,
     "vendors": "*",
@@ -1159,8 +1159,8 @@
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
     "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "source": {
-      "LinuxKernel": ["/proc/net/dev", "ethtool"]
+    "platforms": {
+      "linux": ["/proc/net/dev", "ethtool"]
     },
     "device": null,
     "vendors": "*",
