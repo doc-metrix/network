@@ -1,5 +1,5 @@
 {
-  "net.{interface}.bytesRX": {
+  "net.bytesRX": {
     "displayName": "Bytes Received",
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
@@ -28,7 +28,7 @@
       "http://linux.die.net/man/5/proc"
     ]
   },
-  "net.{interface}.bytesTX": {
+  "net.bytesTX": {
     "displayName": "Bytes Transmitted",
     "units": "B",
     "max": "MAX_UNSIGNED_LONG",
@@ -57,7 +57,7 @@
       "http://linux.die.net/man/5/proc"
     ]
   },
-  "net.{interface}.carrierTX": {
+  "net.carrierTX": {
     "displayName": "Carrier Signal Errors",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -86,7 +86,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.collsTX": {
+  "net.collsTX": {
     "displayName": "Packet Collisions",
     "units": "collisions",
     "max": "MAX_UNSIGNED_LONG",
@@ -115,7 +115,7 @@
       "http://www.webopedia.com/TERM/P/packet_collision.html"
     ]
   },
-  "net.{interface}.compressedRX": {
+  "net.compressedRX": {
     "displayName": "Compressed Packets Recieved",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -144,7 +144,7 @@
       "http://www.freesoft.org/CIE/RFC/1144/6.htm"
     ]
   },
-  "net.{interface}.compressedTX": {
+  "net.compressedTX": {
     "displayName": "Compressed Packets Sent",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -173,7 +173,7 @@
       "http://www.freesoft.org/CIE/RFC/1144/6.htm"
     ]
   },
-  "net.{interface}.dropRX": {
+  "net.dropRX": {
     "displayName": "Dropped Packets (Receiving)",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -204,7 +204,7 @@
         "http://linux.die.net/man/5/proc"
     ]
   },
-  "net.{interface}.dropTX": {
+  "net.dropTX": {
     "displayName": "Dropped Packets (Transmitting)",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -232,7 +232,7 @@
       "http://linux.die.net/man/5/proc"
     ]
   },
-  "net.{interface}.errsRX": {
+  "net.errsRX": {
     "displayName": "Errors (Receiving)",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -261,7 +261,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.errsTX": {
+  "net.errsTX": {
     "displayName": "Errors (Transmitting)",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -290,7 +290,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.fifoRX": {
+  "net.fifoRX": {
     "displayName": "Receiving Queue Errors",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -319,7 +319,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.fifoTX": {
+  "net.fifoTX": {
     "displayName": "Transmitting Queue Errors",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -348,7 +348,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.frameRX": {
+  "net.frameRX": {
     "displayName": "Frame Errors",
     "units": "errors",
     "max": "MAX_UNSIGNED_LONG",
@@ -378,7 +378,7 @@
       "http://kb.juniper.net/InfoCenter/index?page=content&id=KB27597"
     ]
   },
-  "net.{interface}.multicastRX": {
+  "net.multicastRX": {
     "displayName": "Multicast Frames Received",
     "units": "frames",
     "max": "MAX_UNSIGNED_LONG",
@@ -407,7 +407,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.packetsRX": {
+  "net.packetsRX": {
     "displayName": "Packets Received",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -436,7 +436,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.packetsTX": {
+  "net.packetsTX": {
     "displayName": "Packets Transmitted",
     "units": "packets",
     "max": "MAX_UNSIGNED_LONG",
@@ -465,7 +465,7 @@
       "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html"
     ]
   },
-  "net.{interface}.utilizationRX": {
+  "net.utilizationRX": {
     "displayName": "Network Utilization (Receiving)",
     "units": "utilization",
     "max": 1,
@@ -501,7 +501,7 @@
       "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
     ]
   },
-  "net.{interface}.utilizationTX": {
+  "net.utilizationTX": {
     "displayName": "Network Utilization (Transmitting)",
     "units": "utilization",
     "max": 1,
