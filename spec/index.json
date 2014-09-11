@@ -20,7 +20,7 @@
     "platforms": {
       "linux" : ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.bytesRX$",
+    "device": "net\\.([^\\.]{1,6})\\.bytesRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -49,7 +49,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6}\\.bytesTX$",
+    "device": "net\\.([^\\.]{1,6}\\.bytesTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -78,7 +78,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.carrierTX$",
+    "device": "net\\.([^\\.]{1,6})\\.carrierTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -107,7 +107,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.collsTX$",
+    "device": "net\\.([^\\.]{1,6})\\.collsTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -136,7 +136,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedRX$",
+    "device": "net\\.([^\\.]{1,6})\\.compressedRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -165,7 +165,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.compressedTX$",
+    "device": "net\\.([^\\.]{1,6})\\.compressedTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -197,7 +197,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropRX$",
+    "device": "net\\.([^\\.]{1,6})\\.dropRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -225,7 +225,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.dropTX$",
+    "device": "net\\.([^\\.]{1,6})\\.dropTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -253,7 +253,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsRX$",
+    "device": "net\\.([^\\.]{1,6})\\.errsRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -282,7 +282,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.errsTX$",
+    "device": "net\\.([^\\.]{1,6})\\.errsTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -311,7 +311,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoRX$",
+    "device": "net\\.([^\\.]{1,6})\\.fifoRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -340,7 +340,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.fifoTX$",
+    "device": "net\\.([^\\.]{1,6})\\.fifoTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -369,7 +369,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.frameRX$",
+    "device": "net\\.([^\\.]{1,6})\\.frameRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -399,7 +399,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.mutlicastRX$",
+    "device": "net\\.([^\\.]{1,6})\\.mutlicastRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -428,7 +428,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.[^(lo)][^\\.]{1,6})\\.packetsRX$",
+    "device": "net\\.[^\\.]{1,6})\\.packetsRX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -457,7 +457,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.packetsTX$",
+    "device": "net\\.([^\\.]{1,6})\\.packetsTX$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -535,562 +535,6 @@
       "http://linux.die.net/man/5/proc",
       "http://linux.die.net/man/8/ethtool",
       "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
-    ]
-  },
-  "net.lo.bytesRX": {
-    "displayName": "Bytes Received",
-    "units": "B",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "d_{rx}",
-      "variables": {
-        "d_{rx}": {
-          "description": "Number of bytes received"
-        }
-      }
-    },
-    "description": "The total number of bytes received by the loopback interface. This should be equal to the number of bytes transmitted by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.bytesRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
-      "http://linux.die.net/man/5/proc",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.bytesTX": {
-    "displayName": "Bytes Transmitted",
-    "units": "B",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "d_{tx}",
-      "variables": {
-        "d_{tx}": {
-          "description": "Number of bytes transmitted"
-        }
-      }
-    },
-    "description": "The total number of bytes transmitted through the loopback interface. This should equal the number of bytes received by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.bytesTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
-      "http://linux.die.net/man/5/proc",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.carrierTX": {
-    "displayName": "Carrier Signal Errors",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{CarrierLosses}",
-      "variables": {
-        "n_{CarrierLosses}": {
-          "description": "Number of loss-of-carrier-signal events detected by the device driver"
-        }
-      }
-    },
-    "description": "The total number of loss-of-carrier-signal events detected by the loopback interface. As it is a virtual interface with no hardware attached, this metric should be 0.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.carrierTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.collsTX": {
-    "displayName": "Packet Collisions",
-    "units": "collisions",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{collisions}",
-      "variables": {
-        "n_{collisions": {
-          "description": "Number of packet collisions detected when transmitting"
-        }
-      }
-    },
-    "description": "The number of packet collisions detected when transmitting on the loopback interface. This should be 0, as the loopback interface is only used by this machine.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo).collsTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.webopedia.com/TERM/P/packet_collision.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.compressedRX": {
-    "displayName": "Compressed Packets Received",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{CompressedPacketsRX}",
-      "variables": {
-        "n_{CompressedPacketsRX}": {
-          "description": "Number of compressed packets received"
-        }
-      }
-    },
-    "description": "Number of compressed packets received by the loopback interface. This should be equal to the number of compressed packets sent by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.compressedRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.freesoft.org/CIE/RFC/1144/6.htm",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.compressedTX": {
-    "displayName": "Compressed Packets Transmitted",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{CompressedPacketsTX}",
-      "variables": {
-        "n_{CompressedPacketsTX}": {
-          "description": "Number of compressed packets transmitted"
-        }
-      }
-    },
-    "description": "Number of compressed packets sent through the loopback interface. This should be equal to the number of compressed packets received by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.compressedTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.freesoft.org/CIE/RFC/1144/6.htm",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.dropRX": {
-    "displayName": "Dropped Packets (Receiving)",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
-      "variables": {
-        "n_{DroppedPacketsRX}": {
-          "description": "Number of received packets dropped by this interface"
-        },
-        "n_{MissingPacketsRX}": {
-          "description": "Number of expected packets not received"
-        }
-      }
-    },
-    "description": "Number of packets dropped and otherwise not received by the loopback interface. Since there is no physical connection to this interface (i.e. no bad cables), this means that its buffer is being overwhelmed.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.lo\\.dropRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.dropTX": {
-    "displayName": "Dropped Packets (Transmitting)",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{DroppedPacketsTX}",
-      "variables": {
-        "n_{DroppedPacketsTX}": {
-          "description": "Number of packets dropped before transmitting"
-        }
-      }
-    },
-    "description": "Number of packets dropped by the loopback interface when transmitting. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.dropTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.errsRX": {
-    "displayName": "Errors (Receiving)",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{ErrorsRX}",
-      "variables": {
-        "n_{ErrorsRX}": {
-          "description": "Number of malformed packets received"
-        }
-      }
-    },
-    "description": "Number of malformed packets received by the loopback interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.errsRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.errsTX": {
-    "displayName": "Errors (Transmitting)",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{ErrorsTX}",
-      "variables": {
-        "n_{ErrorsTX}": {
-          "description": "Number of errors detected when trasnmitting"
-        }
-      }
-    },
-    "description": "Number of errors detected by the loopback interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.errsTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.fifoRX": {
-    "displayName": "Receiving Queue Errors",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{FifoErrorsRX}",
-      "variables": {
-        "n_{FifoErrorsRX": {
-          "description": "Number of receiving queue errors"
-        }
-      }
-    },
-    "description": "The number of receiving queue errors detected by the loopback interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflow.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.fifoRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.fifoTX": {
-    "displayName": "Transmitting Queue Errors",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{FifoErrorsTX}",
-      "variables": {
-        "n_{FifoErrorsTX": {
-          "description": "Number of transmitting queue errors"
-        }
-      }
-    },
-    "description": "The number of transmitting queue errors detected by the loopback interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.fifoTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.frameRX": {
-    "displayName": "Frame Errors",
-    "units": "errors",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw", 
-    "formula": {
-      "equation": "n_{FrameErrsRX}",
-      "variables": {
-        "n_{FrameErrsRX}": {
-          "description": "Number of packets received with framing errors"
-        }
-      }
-    },
-    "description": "Number of packets received by the loopback interface with framing errors. This should be 0, as the source of these errors is usually the physical connection (e.g. cabling) between interfaces.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.frameRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://kb.juniper.net/InfoCenter/index?page=content&id=KB27597",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.multicastRX": {
-    "displayName": "Multicast Frames Received",
-    "units": "frames",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{MulticastFramesRX}",
-      "variables": {
-        "n_{MulticastFramesRX}": {
-          "description": "Number of multicast frames received"
-        }
-      }
-    },
-    "description": "Number of multicast frames received by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.multicastRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.packetsRX": {
-    "displayName": "Packets Received",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{PacketsRX}",
-      "variables": {
-        "n_{PacketsRX}": {
-          "description": "Number of packets received"
-        }
-      }
-    },
-    "description": "Number of packets received by the loopback interface. This should be equal to the number of packets transmitted by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.packetsRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.packetsTX": {
-    "displayName": "Packets Transmitted",
-    "units": "packets",
-    "max": "MAX_UNSIGNED_LONG",
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "count",
-    "type": "raw",
-    "formula": {
-      "equation": "n_{PacketsTX}",
-      "variables": {
-        "n_{PacketsTX}": {
-          "description": "Number of packets transmitted"
-        }
-      }
-    },
-    "description": "Number of packets transmitted by the loopback interface. This should be equal to the number of packets received by the loopback interface.",
-    "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
-    "device": "net\\.(lo)\\.packetsTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://www.linuxdevcenter.com/pub/a/linux/2000/11/16/LinuxAdmin.html",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.utilizationRX": {
-    "displayName": "Network Utilization (Receiving)",
-    "units": "utilization",
-    "max": 1,
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "percentage",
-    "type": "derived",
-    "formula": {
-      "equation": "\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
-      "variables": {
-        "\\Delta d_{rx}": {
-          "description": "Amount of data received in measured time period"
-        },
-        "BW": {
-          "description": "Bandwidth of network interface"
-        },
-        "\\Delta t": {
-          "description": "Amount of time measured"
-        }
-      }
-    },
-    "description": "Percentage of the loopback interface's maximum bandwidth being used for receiving packets.",
-    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
-    "device": "net\\.(lo)\\.utilizationRX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://linux.die.net/man/8/ethtool",
-      "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
-    ]
-  },
-  "net.lo.utilizationTX": {
-    "displayName": "Network Utilization (Transmitting)",
-    "units": "utilization",
-    "max": 1,
-    "min": 0,
-    "sigFigs": null,
-    "dataType": "percentage",
-    "type": "derived",
-    "formula": {
-      "equation": "\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
-      "variables": {
-        "\\Delta d_{tx}": {
-          "description": "Amount of data transmitted in measured time period"
-        },
-        "BW": {
-          "description": "Bandwidth of network interface"
-        },
-        "\\Delta t": {
-          "description": "Amount of time measured"
-        }
-      }
-    },
-    "description": "Percentage of the loopback interface's maximum bandwidth being used for transmitting packets.",
-    "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
-    "device": "net\\.(lo)\\.utilizationTX$",
-    "vendors": "*",
-    "classification": "network",
-    "refs": [
-      "http://linux.die.net/man/5/proc",
-      "http://linux.die.net/man/8/ethtool",
-      "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm",
-      "http://www.webopedia.com/TERM/L/loopback_address.html"
     ]
   },
   "net.utilizationRX": {
