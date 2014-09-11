@@ -20,7 +20,7 @@
     "platforms": {
       "linux" : ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.bytesRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -49,7 +49,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6}\\.bytesTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -78,7 +78,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.carrierTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -107,7 +107,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.collsTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -136,7 +136,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.compressedRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -165,7 +165,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.compressedTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -197,7 +197,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.dropRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -225,7 +225,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.dropTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -253,7 +253,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.errsRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -282,7 +282,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.errsTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -311,7 +311,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.fifoRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -340,7 +340,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.fifoTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -369,7 +369,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.frameRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -399,7 +399,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.mutlicastRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -457,7 +457,7 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.([^\\.]{1,6})\\.packetsTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -492,7 +492,7 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": "net\\.([^(lo)][^\\.]{1,6})\\.utilizationRX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
@@ -528,7 +528,7 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": "net\\.([^(lo)][\\.]{1,6})\\.utilizationTX$",
+    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?))$",
     "vendors": "*",
     "classification": "network",
     "refs": [
