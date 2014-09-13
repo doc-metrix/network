@@ -37,7 +37,7 @@
     "dataType": "count",
     "type": "raw",
     "formula": {
-      "equation": "d_{tx}}",
+      "equation": "d_{tx}",
       "variables": {
         "d_{tx}": {
           "description": "the number of bytes transmitted"
@@ -213,7 +213,7 @@
     "dataType": "count",
     "type": "raw",
     "formula": {
-      "equation": "n_{DroppedPacketsTX",
+      "equation": "n_{DroppedPacketsTX}",
       "variables": {
         "n_{DroppedPacketsTX}": {
           "description": "the number of packets dropped before transmitting"
@@ -477,7 +477,7 @@
       "equation": "\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
       "variables": {
         "\\Delta d_{rx}": {
-          "description": "the amount of data received in measured time period"
+          "description": "the amount of data received in a measured time period"
         },
         "BW": {
           "description": "the bandwidth of the network interface"
@@ -513,7 +513,7 @@
       "equation": "\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
       "variables": {
         "\\Delta d_{tx}": {
-          "description": "the amount of data transmitted in measured time period"
+          "description": "the amount of data transmitted in a measured time period"
         },
         "BW": {
           "description": "the bandwidth of the network interface" 
@@ -548,11 +548,11 @@
     "formula": {
       "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
       "variables": {
-        "n_{net \\neq lo}}": {
+        "n_{net \\neq lo}": {
           "description": "the number of network interfaces, excluding the loopback interface"
         },
         "\\Delta d_{rx}": {
-          "description": "the amount of data received in measured time period"
+          "description": "the amount of data received in a measured time period"
         },
         "BW": {
           "description": "the bandwidth of a network interface"
@@ -585,13 +585,13 @@
     "dataType": "percentage",
     "type": "derived",
     "formula": {
-      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
+      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{tx}}{BW}",
       "variables": {
         "n_{net \\neq lo}": {
           "description": "the number of network interfaces, excluding the loopback interface"
         },
         "\\Delta d_{tx}": {
-          "description": "the amount of data transmitted in measured time period"
+          "description": "the amount of data transmitted in a measured time period"
         },
         "BW": {
           "description": "the bandwidth of a network interface"
