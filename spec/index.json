@@ -11,11 +11,11 @@
       "equation": "d_{rx}",
       "variables": {
         "d_{rx}": {
-          "description": "Number of bytes received"
+          "description": "the number of bytes received"
         }
       }
     },
-    "description": "The total number of bytes received by this network interface.",
+    "description": "The total number of bytes received by a network interface.",
     "notes": "",
     "platforms": {
       "linux" : ["/proc/net/dev"]
@@ -40,11 +40,11 @@
       "equation": "d_{tx}}",
       "variables": {
         "d_{tx}": {
-          "description": "Number of bytes transmitted"
+          "description": "the number of bytes transmitted"
         }
       }
     },
-    "description": "The total number of bytes transmitted by this network interface.",
+    "description": "The total number of bytes transmitted by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -69,11 +69,11 @@
       "equation": "n_{CarrierLosses}",
       "variables": {
         "n_{CarrierLosses}": {
-          "description": "Number of loss-of-carrier signal events detected by the device driver"
+          "description": "the number of loss-of-carrier signal events detected by the device driver"
         }
       }
     },
-    "description": "The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on this device, the device on the other end, or a faulty ethernet cable plugged in to this device.",
+    "description": "The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on the device, the device on the other end, or a faulty ethernet cable plugged in to the device.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -98,11 +98,11 @@
       "equation": "n_{collisions}",
       "variables": {
         "n_{collisions}": {
-          "description": "Number of packet collisions detected when transmitting"
+          "description": "the number of packet collisions detected when transmitting"
         }
       }
     },
-    "description": "The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance",
+    "description": "The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -127,11 +127,11 @@
       "equation": "n_{CompressedPacketsRX}",
       "variables": {
         "n_{CompressedPacketsRX}": {
-          "description": "Number of compressed packets received"
+          "description": "the number of compressed packets received"
         }
       }
     },
-    "description": "Number of compressed packets received by this network interface.",
+    "description": "Number of compressed packets received by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -156,11 +156,11 @@
       "equation": "n_{CompressedPacketsTX}",
       "variables": {
         "n_{CompressedPacketsTX}": {
-          "description": "Number of compressed packets transmitted"
+          "description": "the number of compressed packets transmitted"
         }
       }
     },
-    "description": "Number of compressed packets sent by this network interface.",
+    "description": "Number of compressed packets sent by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -185,14 +185,14 @@
       "equation": "n_{DroppedPacketsRX} + n_{MissingPacketsRX}",
       "variables": {
         "n_{DroppedPacketsRX}": {
-          "description": "Number of received packets dropped by this interface"
+          "description": "the number of received packets dropped by an interface"
         },
         "n_{MissingPacketsRX}": {
-          "description": "Number of expected packets not receieved"
+          "description": "the number of expected packets not received"
         }
       }
     },
-    "description": "Number of packets dropped and otherwise not received by this network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.",
+    "description": "Number of packets dropped and otherwise not received by a network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -216,11 +216,11 @@
       "equation": "n_{DroppedPacketsTX",
       "variables": {
         "n_{DroppedPacketsTX}": {
-          "description": "Number of packets dropped before transmitting"
+          "description": "the number of packets dropped before transmitting"
         }
       }
     },
-    "description": "Number of packets dropped by this network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
+    "description": "Number of packets dropped by a network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -244,11 +244,11 @@
       "equation": "n_{ErrorsRX}",
       "variables": {
         "n_{ErrorsRX}": {
-          "description": "Number of malformed packets received"
+          "description": "the number of malformed packets received"
         }
       }
     },
-    "description": "Number of malformed packets received by this network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
+    "description": "Number of malformed packets received by a network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -273,11 +273,11 @@
       "equation": "n_{ErrorsTX}",
       "variables": {
         "n_{ErrorsTX}": {
-          "description": "Number of errors detected when transmitting"
+          "description": "the number of errors detected when transmitting"
         }
       }
     },
-    "description": "Number of errors detected by this network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
+    "description": "Number of errors detected by a network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -302,11 +302,11 @@
       "equation": "n_{FifoErrorsRX}",
       "variables": {
         "n_{FifoErrorsRX}": {
-          "description": "Number of receiving queue errors"
+          "description": "the number of receiving queue errors"
         }
       }
     },
-    "description": "The number of receiving queue errors detected by this network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.",
+    "description": "The number of receiving queue errors detected by a network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -331,11 +331,11 @@
       "equation": "n_{FifoErrorsTX}",
       "variables": {
         "n_{FifoErrorsTX}": {
-          "description": "Number of transmitting queue errors"
+          "description": "the number of transmitting queue errors"
         }
       }
     },
-    "description": "The number of transmitting queue errors detected by this network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
+    "description": "The number of transmitting queue errors detected by a network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -360,11 +360,11 @@
       "equation": "n_{FrameErrsRX}",
       "variables": {
         "n_{FrameErrsRX}": {
-          "description": "Number of packets received with framing errors"
+          "description": "the number of packets received with framing errors"
         }
       }
     },
-    "description": "Number of packets received by this interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.",
+    "description": "Number of packets received by an interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -390,11 +390,11 @@
       "equation": "n_{MulticastFramesRX}",
       "variables": {
         "n_{MulticastFramesRX}": {
-          "description": "Number of multicast frames received"
+          "description": "the number of multicast frames received"
         }
       }
     },
-    "description": "Number of multicast frames received by this network interface.",
+    "description": "Number of multicast frames received by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -419,11 +419,11 @@
       "equation": "n_{PacketsRX}",
       "variables": {
         "n_{PacketsRX}": {
-          "description": "Number of packets received"
+          "description": "the number of packets received"
         }
       }
     },
-    "description": "Number of packets received by this network interface.",
+    "description": "Number of packets received by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -448,11 +448,11 @@
       "equation": "n_{PacketsTX}",
       "variables": {
         "n_{PacketsTX}": {
-          "description": "Number of packets transmitted"
+          "description": "the number of packets transmitted"
         }
       }
     },
-    "description": "Number of packets transmitted by this network interface.",
+    "description": "Number of packets transmitted by a network interface.",
     "notes": "",
     "platforms": {
       "linux": ["/proc/net/dev"]
@@ -477,18 +477,18 @@
       "equation": "\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
       "variables": {
         "\\Delta d_{rx}": {
-          "description": "Amount of data received in measured time period"
+          "description": "the amount of data received in measured time period"
         },
         "BW": {
-          "description": "Bandwidth of network interface"
+          "description": "the bandwidth of the network interface"
         },
         "\\Delta t": {
-          "description": "Amount of time measured"
+          "description": "the amount of time measured"
         }
       }
     },
-    "description": "Percentage of this network interface's maximum bandwidth being used for receiving packets.",
-    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
+    "description": "Percentage of a network interface's maximum bandwidth being used for receiving packets.",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
@@ -513,18 +513,18 @@
       "equation": "\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
       "variables": {
         "\\Delta d_{tx}": {
-          "description": "Amount of data transmitted in measured time period"
+          "description": "the amount of data transmitted in measured time period"
         },
         "BW": {
-          "description": "Bandwidth of network interface" 
+          "description": "the bandwidth of the network interface" 
         },
         "\\Delta t": {
-          "description": "Amount of time measured"
+          "description": "the amount of time measured"
         }
       }
     },
     "description": "Percentage of this network interface's maximum bandwidth being used for transmitting packets.",
-    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
@@ -537,7 +537,7 @@
       "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
     ]
   },
-  "net.utilizationRX": {
+  "net.utilizationRXAverage": {
     "displayName": "Average Network Utilization (Receiving)",
     "units": "utilization",
     "max": 1,
@@ -549,21 +549,21 @@
       "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{rx}}{BW \\cdot \\Delta t}",
       "variables": {
         "n_{net \\neq lo}}": {
-          "description": "Number of network interfaces, excluding the loopback interface"
+          "description": "the number of network interfaces, excluding the loopback interface"
         },
         "\\Delta d_{rx}": {
-          "description": "Amount of data received in measured time period"
+          "description": "the amount of data received in measured time period"
         },
         "BW": {
-          "description": "Bandwidth of network interface"
+          "description": "the bandwidth of a network interface"
         },
         "\\Delta t": {
-          "description": "Amount of time measured"
+          "description": "the amount of time measured"
         }
       }
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
-    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
+    "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
@@ -576,7 +576,7 @@
       "http://www.hp.com/rnd/device_help/help/hpwnd/webhelp/HPJ3298A/utilization.htm"
     ]
   },
-  "net.utilizationTX": {
+  "net.utilizationTXAverage": {
     "displayName": "Average Network Utilization (Transmitting)",
     "units": "utilization",
     "max": 1,
@@ -588,21 +588,21 @@
       "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{d_{tx|t=1s} - d_{tx|t=0s}}{BW}",
       "variables": {
         "n_{net \\neq lo}": {
-          "description": "Number of network interfaces, excluding the loopback interface"
+          "description": "the number of network interfaces, excluding the loopback interface"
         },
         "\\Delta d_{tx}": {
-          "description": "Amount of data transmitted in measured time period"
+          "description": "the amount of data transmitted in measured time period"
         },
         "BW": {
-          "description": "Bandwidth of network interface"
+          "description": "the bandwidth of a network interface"
         },
         "\\Delta t": {
-          "description": "Amount of time measured"
+          "description": "the amount of time measured"
         }
       }
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
-    "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to make the units match up.",
+    "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
