@@ -585,7 +585,7 @@
     "dataType": "percentage",
     "type": "derived",
     "formula": {
-      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{tx}}{BW}",
+      "equation": "\\frac{1}{n_{net \\neq lo}}\\sum_{net \\neq lo}\\frac{\\Delta d_{tx}}{BW \\cdot \\Delta t}",
       "variables": {
         "n_{net \\neq lo}": {
           "description": "the number of network interfaces, excluding the loopback interface"
