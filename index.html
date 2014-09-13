@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Network by doc-metrix</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Network</h1>
+        <p>Specification for network performance metrics.</p>
+
+        <p class="view"><a href="https://github.com/doc-metrix/network">View the Project on GitHub <small>doc-metrix/network</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/doc-metrix/network/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/doc-metrix/network/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/doc-metrix/network">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="network-metrics" class="anchor" href="#network-metrics"><span class="octicon octicon-link"></span></a>Network Metrics</h1>
+
+<blockquote>
+<p>A specification for network performance metrics.</p>
+</blockquote>
+
+<h2>
+<a name="metrics" class="anchor" href="#metrics"><span class="octicon octicon-link"></span></a>Metrics</h2>
+
+<h4>
+<a name="netbytesrx" class="anchor" href="#netbytesrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.bytesRX</a>
+</h4>
+
+<p>The total number of bytes received by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center"><a href="https://github.com/doc-metrix/units#b">B</a></td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netbytestx" class="anchor" href="#netbytestx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.bytesTX</a>
+</h4>
+
+<p>The total number of bytes transmitted by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center"><a href="https://github.com/doc-metrix/units#b">B</a></td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netcarriertx" class="anchor" href="#netcarriertx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.carrierTX</a>
+</h4>
+
+<p>The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on the device, the device on the other end, or a faulty ethernet cable plugged in to the device.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netcollstx" class="anchor" href="#netcollstx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.collsTX</a>
+</h4>
+
+<p>The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">collisions</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netcompressedrx" class="anchor" href="#netcompressedrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.compressedRX</a>
+</h4>
+
+<p>Number of compressed packets received by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netcompressedtx" class="anchor" href="#netcompressedtx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.compressedTX</a>
+</h4>
+
+<p>Number of compressed packets sent by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netdroprx" class="anchor" href="#netdroprx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.dropRX</a>
+</h4>
+
+<p>Number of packets dropped and otherwise not received by a network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netdroptx" class="anchor" href="#netdroptx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.dropTX</a>
+</h4>
+
+<p>Number of packets dropped by a network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="neterrsrx" class="anchor" href="#neterrsrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.errsRX</a>
+</h4>
+
+<p>Number of malformed packets received by a network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="neterrstx" class="anchor" href="#neterrstx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.errsTX</a>
+</h4>
+
+<p>Number of errors detected by a network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netfiforx" class="anchor" href="#netfiforx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.fifoRX</a>
+</h4>
+
+<p>The number of receiving queue errors detected by a network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netfifotx" class="anchor" href="#netfifotx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.fifoTX</a>
+</h4>
+
+<p>The number of transmitting queue errors detected by a network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netframerx" class="anchor" href="#netframerx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.frameRX</a>
+</h4>
+
+<p>Number of packets received by an interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">errors</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netmulticastrx" class="anchor" href="#netmulticastrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.multicastRX</a>
+</h4>
+
+<p>Number of multicast frames received by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">frames</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netpacketsrx" class="anchor" href="#netpacketsrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.packetsRX</a>
+</h4>
+
+<p>Number of packets received by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netpacketstx" class="anchor" href="#netpacketstx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.packetsTX</a>
+</h4>
+
+<p>Number of packets transmitted by a network interface.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center"><code>MAX_UNSIGNED_LONG</code></td>
+<td align="center">packets</td>
+<td align="right">raw</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#count">count</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netutilizationrx" class="anchor" href="#netutilizationrx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.utilizationRX</a>
+</h4>
+
+<p>Percentage of a network interface's maximum bandwidth being used for receiving packets.</p>
+
+<p>Note: The data received is reported in <code>bytes</code> while bandwidth is in <code>megabits per second</code>, so some conversion is necessary to ensure the units match.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/doc-metrix/units#utilization">utilization</a></td>
+<td align="right">derived</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#percentage">percentage</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netutilizationtx" class="anchor" href="#netutilizationtx"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.utilizationTX</a>
+</h4>
+
+<p>Percentage of a network interface's maximum bandwidth being used for transmitting packets.</p>
+
+<p>Note: The data transmitted is reported in <code>bytes</code> while bandwidth is in <code>megabits per second</code>, so some conversion is necessary to ensure the units match.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/doc-metrix/units#utilization">utilization</a></td>
+<td align="right">derived</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#percentage">percentage</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netutilizationrxaverage" class="anchor" href="#netutilizationrxaverage"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.utilizationRXAverage</a>
+</h4>
+
+<p>Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.</p>
+
+<p>Note: The data received is reported in <code>bytes</code> while bandwidth is in <code>megabits per second</code>, so some conversion is necessary to ensure the units match.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/doc-metrix/units#utilization">utilization</a></td>
+<td align="right">derived</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#percentage">percentage</a></td>
+</tr></tbody>
+</table><h4>
+<a name="netutilizationtxaverage" class="anchor" href="#netutilizationtxaverage"><span class="octicon octicon-link"></span></a><a href="http://linux.die.net/man/5/proc">net.utilizationTXAverage</a>
+</h4>
+
+<p>Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.</p>
+
+<p>Note: The data transmitted is reported in <code>bytes</code> while bandwidth is in <code>megabits per second</code>, so some conversion is necessary to ensure the units match.</p>
+
+<table>
+<thead><tr>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Units</th>
+<th align="right">Metric Type</th>
+<th align="right">Data Type</th>
+</tr></thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/doc-metrix/units#utilization">utilization</a></td>
+<td align="right">derived</td>
+<td align="right"><a href="https://github.com/doc-metrix/data-types#percentage">percentage</a></td>
+</tr></tbody>
+</table><h1></h1>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>To contribute to this specification, see the contributing <a href="https://github.com/doc-metrix/contributing">guide</a>. Any updates to the specification should be tagged.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>git tag -a &lt;major.minor.patch&gt; -m <span class="s2">"[UPDATE] version."</span>
+<span class="nv">$ </span>git push origin &lt;major.minor.patch&gt;
+</pre></div>
+
+<p>Use <a href="http://semver.org/">semantic versioning</a> (semvar) for communicating versions.</p>
+
+<ul>
+<li>  Any new metrics should be communicated as <code>minor</code> updates.</li>
+<li>  Any corrections/value modifications should be <code>patches</code>.</li>
+<li>  Any specification restructuring (changing field names, removing fields, etc) should be communicated as a <code>major</code> update.</li>
+</ul><h1></h1>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>The specification is stored as <a href="http://json.org/">JSON</a>, a lightweight data-interchange format. Many languages provide JSON support: <a href="http://www.json.org/js.html">JavaScript</a>, <a href="https://docs.python.org/2/library/json.html">Python</a>, <a href="http://golang.org/pkg/encoding/json/">Go</a>, <a href="http://php.net/manual/en/book.json.php">PHP</a>, <a href="http://json.org/java/">Java</a>, <a href="http://hackage.haskell.org/package/json">Haskell</a>, and <a href="http://json.org/">others</a>.</p>
+
+<p>You are free to use the JSON specification, as is. Simply copy the file and use accordingly.</p>
+
+<p>For those using package managers to manage dependencies, we provide package manager support, as outlined below.</p>
+
+<h3>
+<a name="bower" class="anchor" href="#bower"><span class="octicon octicon-link"></span></a>Bower</h3>
+
+<p>The specification is registered as a <a href="http://bower.io">Bower</a> package. Bower provides a straightforward means for managing dependencies.</p>
+
+<p>In order to use Bower, you must first install <a href="http://nodejs.org/">Node.js</a> and <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Git</a>. Once the prerequisites are installed,</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>npm install -g bower
+</pre></div>
+
+<p>To <a href="http://bower.io/docs/api/#install">install</a> the latest specification,</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>bower install doc-metrix-network
+</pre></div>
+
+<p>Bower will place the specification in a <code>bower_components/</code> directory within the current working directory.</p>
+
+<p>To <a href="http://bower.io/docs/api/#update">update</a> to the latest specification,</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>bower update doc-metrix-network
+</pre></div>
+
+<h3>
+<a name="utilities" class="anchor" href="#utilities"><span class="octicon octicon-link"></span></a>Utilities</h3>
+
+<p>List of utilities using this specification:</p>
+
+<ul>
+<li>  <a href="https://github.com/doc-metrix/network-node">Node.js Module</a>
+</li>
+</ul><hr><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://opensource.org/licenses/MIT">MIT license</a>. </p>
+
+<hr><h2>
+<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
+
+<p>Copyright © 2014. NodePrime.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/doc-metrix">doc-metrix</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
