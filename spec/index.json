@@ -20,8 +20,16 @@
     "platforms": {
       "linux" : ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
@@ -49,8 +57,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://www.kbrandt.com/2009/07/debuging-a-script-that-parses-procnetdev.html",
@@ -78,8 +94,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -107,8 +131,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -136,8 +168,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -165,8 +205,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -197,8 +245,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
         "http://linux.die.net/man/5/proc"
@@ -225,8 +281,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc"
@@ -253,8 +317,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -282,8 +354,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -311,8 +391,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -340,8 +428,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -369,8 +465,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -399,8 +503,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -428,8 +540,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "net\\.[^\\.]{1,6})\\.packetsRX$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -457,8 +577,16 @@
     "platforms": {
       "linux": ["/proc/net/dev"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?)|(lo))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}",
+      "lo\\d*"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -492,8 +620,15 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -528,8 +663,15 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": "^((eth\\d+)|(em\\d+)|(p\\d+p\\d+(_\\d+)?))$",
-    "vendors": "*",
+    "devices": [
+      "eth\\d+",
+      "em\\d+",
+      "en\\d+",
+      "ppp\\d+",
+      "vmnet\\d+",
+      "wlan\\d+",
+      "p\\d+p\\d+(?:_\\d+){0,1}"
+    ],
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -567,8 +709,7 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": null,
-    "vendors": "*",
+    "devices": null,
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
@@ -606,8 +747,7 @@
     "platforms": {
       "linux": ["/proc/net/dev", "ethtool"]
     },
-    "device": null,
-    "vendors": "*",
+    "devices": null,
     "classification": "network",
     "refs": [
       "http://linux.die.net/man/5/proc",
