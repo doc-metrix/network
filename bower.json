@@ -1,21 +1,20 @@
 {
   "name": "doc-metrix-network",
   "version": "0.0.0",
-  "description": "A specification for network performance metrics.",
+  "description": "Documentation for network performance metrics.",
   "authors": [
     {
       "name": "Andrew Krause",
       "email": "andrew@nodeprime.com"
     }
   ],
-  "main": "spec/index.json",
+  "main": "doc/index.json",
   "repository": {
     "type": "git",
     "url": "git://github.com/doc-metrix/network.git"
   },
   "keywords": [
     "doc-metrix",
-    "specification",
     "network",
     "metrics",
     "documentation"

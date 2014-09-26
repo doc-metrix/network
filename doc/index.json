@@ -17,9 +17,6 @@
     },
     "description": "The total number of bytes received by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux" : ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -54,9 +51,6 @@
     },
     "description": "The total number of bytes transmitted by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -91,9 +85,6 @@
     },
     "description": "The total number of loss-of-carrier-signal events detected by the device driver. If this value is high, especially when it has only been active for a short time, it means the connection is going up and down a lot. This can be caused by problems either on the device, the device on the other end, or a faulty ethernet cable plugged in to the device.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -128,9 +119,6 @@
     },
     "description": "The number of packet collisions detected when transmitting. Packet collisions occur when multiple devices use a shared resource (such as an ethernet cable) to transmit a packet at the same time. Frequent packet collisions degrade network performance.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -165,9 +153,6 @@
     },
     "description": "Number of compressed packets received by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -202,9 +187,6 @@
     },
     "description": "Number of compressed packets sent by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -242,9 +224,6 @@
     },
     "description": "Number of packets dropped and otherwise not received by a network interface. This means that your system is unable to process incoming packets fast enough, overwhelming its buffer, or there is an issue in your cabling leading to packet loss.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -278,9 +257,6 @@
     },
     "description": "Number of packets dropped by a network interface. This means that your system is unable to process outgoing packets fast enough, overwhelming its buffer.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -314,9 +290,6 @@
     },
     "description": "Number of malformed packets received by a network interface. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -351,9 +324,6 @@
     },
     "description": "Number of errors detected by a network interface when transmitting. Errors are typically caused by bursts of traffic causing overloads, a speed/duplex mismatch with the connecting port on the other end, or a large number of security rules.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -388,9 +358,6 @@
     },
     "description": "The number of receiving queue errors detected by a network interface. This is often caused by receiving more packets than the computer can process, leading to buffer overflows.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -425,9 +392,6 @@
     },
     "description": "The number of transmitting queue errors detected by a network interface. This is often caused by trying to send more packets than the network connection can handle, leading to buffer overflows.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -462,9 +426,6 @@
     },
     "description": "Number of packets received by an interface with framing errors. This is often a physical issue (faulty cables or bad Network Interface Card), though it may be caused by mismatched duplex settings.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -500,9 +461,6 @@
     },
     "description": "Number of multicast frames received by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -537,9 +495,6 @@
     },
     "description": "Number of packets received by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -574,9 +529,6 @@
     },
     "description": "Number of packets transmitted by a network interface.",
     "notes": "",
-    "platforms": {
-      "linux": ["/proc/net/dev"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -617,9 +569,6 @@
     },
     "description": "Percentage of a network interface's maximum bandwidth being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -660,9 +609,6 @@
     },
     "description": "Percentage of this network interface's maximum bandwidth being used for transmitting packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
     "devices": [
       "eth\\d+",
       "em\\d+",
@@ -706,9 +652,6 @@
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for receiving packets.",
     "notes": "The data received is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
     "devices": null,
     "classification": "network",
     "refs": [
@@ -744,9 +687,6 @@
     },
     "description": "Average percentage of the maximum bandwidth across all interfaces (except loopback) being used for transmitting packets.",
     "notes": "The data transmitted is reported in bytes while bandwidth is in megabits per second, so some conversion is necessary to ensure the units match.",
-    "platforms": {
-      "linux": ["/proc/net/dev", "ethtool"]
-    },
     "devices": null,
     "classification": "network",
     "refs": [
